@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<HTML lang="en-US">
+<HEAD>
+<TITLE> "THIS IS MY FIRST WEBPAGE" </TITLE>
+
+<meta charset="UTF-8"></meta>
+<meta name="description" content="learning">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Praveen Bejugam">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<base href="https://www.w3schools.com/images/" target="_blank">
+
+<link rel="stylesheet" href="styles.css">
+
+
+<script src="myJava.js">
+</script>
+
+</HEAD>
+
+
+<BODY>
+
+<button type=button onclick="turnON()"> turn me ON </button>
+
+<img id="MyBulb" src="pic_bulbon.gif" style="width:100px" alt="OFF BULB">
+
+<button type=button onclick="turnOFF()"> turn me Off </button>
+
+<H1 class="hide";Style=Color:Blue> Hello World </H1>
+<H2 id="hello"> Hello H2 </H1>
+
+<ul>
+ <li> Anivtha </li>
+<br>
+ <li> Adithi </li>
+</ul>
+
+<Button onClick="hideMe()"> click me to hide the Hello world </button>
+
+<a href="https://www.w3schools.com" target=_blank> W3 Link </a>
+<br>
+<a href="https://www.w3schools.com">This is a link</a>
+
+
+<p style="font-size:60px; color:blue; background-color:red" title="John 'ShotGun' Nelson" id=first_para> <b><i>here you go </i></b> </p>
+
+<hr>
+
+<!-- this is comment area -->
+
+<p style="text-align:center;" title="John 'ShotGun' Nelson" id=first_para> here second go </p>
+
+<p class=small_para> My favorite color is <del>blue</del> red.</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<a href="#first_para">Jump to first para</a>
+
+
+<a href="default.asp">
+  <img src="TV unit 1.jpg" alt="HTML tutorial" style="float:right;width:82px;height:82px;border:0">
+</a>
+
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+
+<table>
+<tr>
+<th> Name </th>
+<th> relation </th>
+<th> age </th>
+</tr>
+
+<tr>
+<td> Praveen </td>
+<td> self </td>
+<td> 28 </td>
+</tr>
+
+<tr>
+<td> rajitha </td>
+<td> wife </td>
+<td> 33 </td>
+</tr>
+
+
+<tr>
+<td> Anvitha </td>
+<td> daughter </td>
+<td> 10 </td>
+</tr>
+
+<tr>
+<td> Adithi </td>
+<td> daughter </td>
+<td> 5 </td>
+</tr>
+
+
+</table>
+
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London - DIV is block element and span is in-line element</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+
+<h1 id="myH1JS">My <span style="color:red">Important</span> Heading</h1>
+
+<script>
+var arr = ["anvitha", "adithi", "rajitha"];
+var person1 = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+var person = {
+    firstName: "praveen",
+    lastName : "Bejugam",
+    id       : 5566,
+    fullName : function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+document.getElementById("myH1JS").innerHTML =
+typeof "" + "<br>" +
+typeof arr + "<br>" +
+person.fullName()
+</script>
+
+
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+
+</BODY>
+</HTML>

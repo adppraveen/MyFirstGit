@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+
+<TITLE> My Calculator </TITLE>
+
+<style>
+H1 {
+    color: red;
+    text-align: center;
+} 
+
+P#Calculator
+{
+    Color: Green
+    
+    
+}
+</style>
+
+</Head>
+
+<Body>
+
+<H1>Calculator</H1>
+<P> Enter two numbers, Operator and Press Submit button </P> 
+
+<form method="get" name="myForm">
+  First number:<br>
+  <input type="number" id ="first_number" value=1 min='1' and max='2' autofocus>
+  <br>
+  Operator:<br>
+  <input type="text" name = "Operator" id = "myOp" value = "+"> 	
+   <br>
+  Last number:<br>
+  <input type="number" id ="second_number" value=5>
+  <br><br>
+  <Button type="button" onclick="calci()">
+   Calculate
+   </button>
+   <input type="reset">
+</form> 
+
+
+<p> Output value is here:</p>
+<p id="Calculator"></p>
+
+<Script>
+  function calci()
+   {
+	
+   var op =    document.getElementById("myOp").value;
+   var first = parseInt(document.getElementById("first_number").value);
+   var second= parseInt(document.getElementById("second_number").value);
+   
+   var print = first + second
+       
+  
+   if (op == "-")
+      print = first - second;
+ 
+    else   if (op == "*")
+      print = first * second;
+
+   else   if (op == "%")
+      print = first / second;
+   
+  
+  document.getElementById("Calculator").innerHTML= print
+  
+   }
+</Script>
+
+
+
+</body>
+</html>
